@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>تحلیل تاکتیکی | آنالیز فنی مسابقات</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700&amp;display=swap');
+    
+    body {
+        font-family: 'Vazirmatn', sans-serif;
+        background-color: #0f172a;
+        color: #e2e8f0;
+    }
+    
+    .tactic-card {
+        background: #1e2937;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        border: 1px solid #334155;
+    }
+    
+    .tactic-card:hover {
+        border-color: #14b8a6;
+        transform: translateY(-3px);
+    }
+    
+    .section-header {
+        font-size: 2.6rem;
+        font-weight: 700;
+        letter-spacing: -2px;
+    }
+    
+    .analysis-text {
+        font-size: 1.05rem;
+        line-height: 2;
+        color: #94a3b8;
+    }
+    
+    .nav-dark {
+        background: #0f172a;
+        border-bottom: 1px solid #1e2937;
+    }
+    
+    .pitch-bg {
+        background: linear-gradient(#1e2937, #0f172a);
+        border: 2px solid #334155;
+    }
+    
+    .stat-bar {
+        height: 6px;
+        background: linear-gradient(to right, #14b8a6, #0d9488);
+        border-radius: 9999px;
+    }
+</style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="nav-dark sticky top-0 z-50">
+        <div class="max-w-screen-2xl mx-auto px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex items-center gap-x-3">
+                    <div class="w-11 h-11 bg-teal-600 rounded-2xl flex items-center justify-center">
+                        <i class="fa-solid fa-chess-board text-white text-3xl"></i>
+                    </div>
+                    <span class="font-bold text-3xl tracking-tighter">تحلیل تاکتیکی</span>
+                </div>
+                
+                <div class="flex items-center gap-x-8 text-sm font-medium">
+                    [فوتبال](#football)
+                    [والیبال](#volleyball)
+                    [گزارش‌ها](#reports)
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <div class="max-w-screen-2xl mx-auto px-8 pt-16 pb-12">
+        <div class="max-w-2xl">
+            <div class="inline-flex items-center gap-x-2 bg-teal-900/50 text-teal-400 px-4 py-1.5 rounded-3xl text-sm mb-6">
+                <i class="fa-solid fa-microscope"></i>
+                <span>آنالیز حرفه‌ای</span>
+            </div>
+            <h1 class="section-header tracking-tighter mb-4">تحلیل تاکتیکی<br>مسابقات</h1>
+            <p class="text-xl text-slate-400">بررسی عمیق ساختار تیمی، الگوهای بازی و نقاط قوت و ضعف</p>
+        </div>
+    </div>
+
+    <!-- Featured Analysis -->
+    <div class="max-w-screen-2xl mx-auto px-8 pb-14">
+        <div class="tactic-card rounded-3xl p-9">
+            <div class="flex items-center justify-between mb-6">
+                <div>
+                    <span class="px-4 py-1 bg-teal-600 text-white text-xs rounded-2xl">آنالیز ویژه</span>
+                    <h2 class="text-3xl font-bold mt-3">پرسپولیس vs استقلال — دربی ۱۰۴</h2>
+                </div>
+                <div class="text-right">
+                    <div class="text-teal-400 text-sm">۱۵ بهمن ۱۴۰۳</div>
+                </div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-6">
+                <div>
+                    <div class="text-sm text-slate-400 mb-1">مالکیت توپ</div>
+                    <div class="flex items-center gap-x-3">
+                        <div class="flex-1"><div class="stat-bar w-[62%]"></div></div>
+                        <span class="font-bold">۶۲٪</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="text-sm text-slate-400 mb-1">دقت پاس</div>
+                    <div class="flex items-center gap-x-3">
+                        <div class="flex-1"><div class="stat-bar w-[81%]"></div></div>
+                        <span class="font-bold">۸۱٪</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="text-sm text-slate-400 mb-1">شوت به چارچوب</div>
+                    <div class="flex items-center gap-x-3">
+                        <div class="flex-1"><div class="stat-bar w-[45%]"></div></div>
+                        <span class="font-bold">۴۵٪</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Football Analysis -->
+    <div id="football" class="max-w-screen-2xl mx-auto px-8 py-10">
+        <h2 class="text-3xl font-bold mb-8 px-1">تحلیل تاکتیکی فوتبال</h2>
+        
+        <div class="grid md:grid-cols-2 gap-6">
+            <div class="tactic-card rounded-3xl p-8">
+                <div class="flex items-center gap-x-3 mb-5">
+                    <i class="fa-solid fa-futbol text-teal-400"></i>
+                    <span class="font-semibold">ساختار ۴-۲-۳-۱ پرسپولیس</span>
+                </div>
+                <p class="analysis-text">پرسپولیس در این بازی با آرایش ۴-۲-۳-۱ بازی کرد. دو هافبک دفاعی نقش کلیدی در کنترل میانه میدان داشتند و با پرسینگ بالا، مانع از گردش توپ استقلال شدند. خط حمله با استفاده از عرض زمین و نفوذ وینگ‌ها، فضاهای زیادی برای مهاجم مرکزی ایجاد کرد.</p>
+            </div>
+            
+            <div class="tactic-card rounded-3xl p-8">
+                <div class="flex items-center gap-x-3 mb-5">
+                    <i class="fa-solid fa-futbol text-teal-400"></i>
+                    <span class="font-semibold">دفاع سه نفره استقلال</span>
+                </div>
+                <p class="analysis-text">استقلال در نیمه دوم به دفاع سه نفره تغییر سیستم داد. این تغییر باعث شد خط میانی فشرده‌تر شود، اما فضاهای پشت مدافعان کناری بیشتر در معرض خطر قرار گرفت. پرسپولیس از همین نقطه ضعف استفاده کرد و چند موقعیت خطرناک خلق نمود.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Long Content -->
+    <div class="max-w-screen-2xl mx-auto px-8 py-12 border-t border-slate-700">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold mb-8">بررسی عمیق الگوهای تاکتیکی</h2>
+            
+            <div class="space-y-10">
+                <div>
+                    <h3 class="font-semibold text-2xl mb-4 text-teal-400">پرسینگ و بازپس‌گیری توپ</h3>
+					<img 
+  src="https://cdn.tarafdari.com/tarafdari-static-files/ts2.tarafdari.com/contents/user7002/news/1200-57542440-soccer-strategies-and-tactics_0.jpg" 
+  alt="تحلیل فرم تیم‌های اروپایی" 
+  style="width: 100%; max-width: 850px; height: 320px; object-fit: cover; display: block; margin: 24px auto; border-radius: 20px; box-shadow: 0 10px 20px rgba(0,0,0,0.3);"
+>
+                    <p class="analysis-text">یکی از مهم‌ترین نکات تاکتیکی در بازی‌های اخیر، شدت پرسینگ تیم‌ها بوده است. پرسپولیس با استفاده از پرسینگ سه‌گانه در خط حمله، توانست چندین بار توپ را در میانه میدان از استقلال پس بگیرد. این سبک بازی باعث شد استقلال نتواند از عقب زمین توپ را به راحتی به جلو ببرد. در مقابل، استقلال در نیمه دوم با کاهش شدت پرس، سعی کرد فضاهای بیشتری برای ضدحمله ایجاد کند که تا حدی موفق بود.</p>
+                </div>
+                
+                <div>
+                    <h3 class="font-semibold text-2xl mb-4 text-teal-400">استفاده از عرض زمین در والیبال</h3>
+                    <p class="analysis-text">در بخش والیبال نیز تحلیل تاکتیکی نشان می‌دهد که تیم‌های برتر ایرانی در حال حاضر بیشتر از عرض زمین استفاده می‌کنند. تیم پیکان با ارسال‌های بلند به کناره‌ها و استفاده از مهاجمان قدرتمند در پست‌های چهار و دو، توانسته است دفاع حریفان را به هم بریزد. این الگو در لیگ ملت‌ها نیز توسط تیم ملی ایران به کار گرفته شده و نتایج خوبی به همراه داشته است. تغییر سرعت در حملات و استفاده از فریب‌های تاکتیکی از دیگر نکات برجسته در بازی‌های اخیر بوده است.</p>
+                </div>
+                
+                <div>
+                    <h3 class="font-semibold text-2xl mb-4 text-teal-400">تحولات تاکتیکی در نیم‌فصل دوم</h3>
+                    <p class="analysis-text">با نزدیک شدن به نیم‌فصل دوم، بسیاری از مربیان در حال اعمال تغییرات اساسی در سیستم‌های تیمی خود هستند. برخی تیم‌ها به سمت بازی مالکانه و برخی دیگر به سمت بازی مستقیم و ضدحمله حرکت کرده‌اند. این تغییرات باعث شده است که الگوهای تاکتیکی مسابقات جذاب‌تر و غیرقابل پیش‌بینی‌تر شود. تحلیل‌گران معتقدند که تیم‌هایی که بتوانند انعطاف‌پذیری تاکتیکی بیشتری داشته باشند، شانس بالاتری برای موفقیت در ادامه فصل خواهند داشت.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Volleyball Section -->
+    <div id="volleyball" class="max-w-screen-2xl mx-auto px-8 py-12">
+        <h2 class="text-3xl font-bold mb-8 px-1">تحلیل تاکتیکی والیبال</h2>
+        
+        <div class="tactic-card rounded-3xl p-9">
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <span class="text-teal-400 text-sm">لیگ برتر مردان</span>
+                    <h4 class="font-bold text-2xl mt-2 mb-4">سیستم ۵-۱ پیکان</h4>
+                    <p class="analysis-text">تیم پیکان با آرایش ۵-۱ و استفاده از یک پاسور مرکزی، توانسته است هماهنگی بالایی در حمله ایجاد کند. تمرکز اصلی این تیم روی توپ‌های سریع و ترکیبی است.</p>
+                </div>
+                <div>
+                    <span class="text-teal-400 text-sm">لیگ ملت‌ها</span>
+                    <h4 class="font-bold text-2xl mt-2 mb-4">دفاع منطقه‌ای ایران</h4>
+                    <p class="analysis-text">تیم ملی ایران در لیگ ملت‌ها از دفاع منطقه‌ای با تمرکز روی بلوک دو نفره استفاده می‌کند که باعث شده آمار دفاع روی تور این تیم به طور چشمگیری افزایش یابد.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="border-t border-slate-700 py-8 text-center text-sm text-slate-500">
+        <p>© ۱۴۰۳ تحلیل تاکتیکی — تمام حقوق محفوظ است</p>
+    </footer>
+
+</body>
+</html>
